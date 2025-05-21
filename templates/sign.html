@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#041622] flex items-center justify-center min-h-screen p-4">
+  <div
+    class="flex max-w-[480px] w-full rounded-lg border border-[#0bc5d2] shadow-[0_0_10px_#0bc5d2] overflow-hidden"
+  >
+    <!-- Left side -->
+    <div
+      class="flex flex-col justify-center px-8 py-10 w-2/5 bg-gradient-to-br from-[#0bc5d2] to-[#0a8a9f]"
+    >
+      <h2 class="text-white font-extrabold text-xl leading-tight mb-3">
+        WELCOME <br />BACK!
+      </h2>
+      <p class="text-[#cce7eb] text-sm leading-relaxed max-w-[160px]">
+        Lorem ipsum, dolor sit amet consectetur adipisicing.
+      </p>
+    </div>
+
+    <!-- Right side -->
+    <form
+      class="flex flex-col justify-center px-8 py-10 w-3/5 bg-[#041622] rounded-tr-lg rounded-br-lg"
+      autocomplete="off"
+    >
+      <h3 class="text-white font-bold text-lg mb-6">Sign Up</h3>
+
+      <label
+        for="username"
+        class="text-[#7f8a93] text-xs font-semibold mb-1 flex items-center gap-1"
+      >
+        Username
+        <i class="fas fa-user text-[#0bc5d2] text-sm"></i>
+      </label>
+      <input
+        id="username"
+        type="text"
+        value="codehal"
+        class="mb-4 bg-transparent border-b border-[#0bc5d2] text-white text-sm placeholder-[#0bc5d2] focus:outline-none focus:border-[#0bc5d2] py-1"
+      />
+
+      <label
+        for="email"
+        class="text-[#7f8a93] text-xs font-semibold mb-1 flex items-center gap-1"
+      >
+        Email
+        <i class="fas fa-envelope text-[#0bc5d2] text-sm"></i>
+      </label>
+      <input
+        id="email"
+        type="email"
+        value="code"
+        class="mb-4 bg-transparent border-b border-[#0bc5d2] text-white text-sm placeholder-[#0bc5d2] focus:outline-none focus:border-[#0bc5d2] py-1"
+      />
+
+      <label
+        for="password"
+        class="text-[#7f8a93] text-xs font-semibold mb-1 flex items-center gap-1"
+      >
+        Password
+        <i class="fas fa-lock text-[#0bc5d2] text-sm"></i>
+      </label>
+      <input
+        id="password"
+        type="password"
+        class="mb-6 bg-transparent border-b border-[#0bc5d2] text-white text-sm placeholder-[#0bc5d2] focus:outline-none focus:border-[#0bc5d2] py-1"
+      />
+
+      <button
+        type="submit"
+        class="bg-gradient-to-b from-[#0bc5d2] to-[#0a8a9f] text-white text-sm font-semibold rounded-full py-2 px-8 mb-4 hover:brightness-110 transition"
+      >
+        Sign Up
+      </button>
+
+      <p class="text-[#7f8a93] text-xs">
+        Already have an account?
+        <a href="#" class="text-[#0bc5d2] hover:underline">Login</a>
+      </p>
+    </form>
+  </div>
+</body>
+</html>
